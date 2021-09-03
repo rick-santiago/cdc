@@ -1,0 +1,6 @@
+stubrunner:
+  stubs-mode: LOCAL
+#  stubs-mode: REMOTE
+#  repositoryRoot: http://sit.shk.com.cn:8080/nexus-2.9.1-02/content/repositories/snapshots
+  ids:
+    - com.cdc:provider:+:stubs:8090
