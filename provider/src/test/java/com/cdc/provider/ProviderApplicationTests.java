@@ -1,13 +1,15 @@
 package com.cdc.provider;
 
-import org.junit.jupiter.api.Test;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
+import org.junit.jupiter.api.BeforeEach;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProviderApplicationTests {
+public class ProviderApplicationTests {
 
-    @Test
-    void contextLoads() {
+    @BeforeEach
+    public void setup() {
+        RestAssuredMockMvc.standaloneSetup(new ProviderApplication());
     }
 
 }
