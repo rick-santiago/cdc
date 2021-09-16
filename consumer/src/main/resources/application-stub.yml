@@ -4,3 +4,11 @@ stubrunner:
 #  repositoryRoot: http://sit.shk.com.cn:8080/nexus-2.9.1-02/content/repositories/snapshots
   ids:
     - com.cdc:provider:+:stubs:8090
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+feign:
+  client:
+    url:
+      orderUrl: http://127.0.0.1:8090

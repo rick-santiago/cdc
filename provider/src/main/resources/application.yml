@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: consul-client-provider
+  cloud:
+    consul:
+      discovery:
+        instance-id: provider-service-id
+        serviceName: consul-client-provider
+#        healthCheckPath: ${management.server.servlet.context-path}/actuator/health
+#        healthCheckInterval: 15s
